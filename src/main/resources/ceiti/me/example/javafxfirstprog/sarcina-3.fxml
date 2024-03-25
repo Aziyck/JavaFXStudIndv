@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="338.0" prefWidth="238.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ceiti.me.example.javafxfirstprog.Sarcina3Controller">
+   <children>
+      <TextArea fx:id="textArea" editable="false" layoutX="9.0" layoutY="8.0" prefHeight="225.0" prefWidth="220.0" />
+      <Button fx:id="openFileBtn" onAction="#onClickOpenFileBtn" layoutX="14.0" layoutY="240.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="214.0" text="Open File" />
+      <Button fx:id="processDataBtn" onAction="#onClickProcessDataBtn" disable="true" layoutX="14.0" layoutY="271.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="214.0" text="Process the Data" />
+      <Button fx:id="saveIntoFileBtn" onAction="#onClickSaveIntoFileBtn" disable="true" layoutX="14.0" layoutY="302.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="214.0" text="Save into File" />
+   </children>
+</AnchorPane>

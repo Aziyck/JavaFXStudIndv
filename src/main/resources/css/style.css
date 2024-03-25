@@ -1,0 +1,45 @@
+.root{
+    -fx-font-size: 16pt;
+    -fx-font-family: "Calibri";
+    -fx-base: #ffffdd;
+    -fx-spacing: 20px;
+    -fx-padding: 20px;
+}
+
+.button{
+    -fx-text-fill: #008000;
+    -fx-font-size: 12pt;
+}
+
+.label{
+    -fx-background-color: #cc000f;
+    -fx-min-width: 80px;
+    -fx-min-weight: bold;
+    -fx-padding: 4px;
+    -fx-text-fill: #ffffff;
+}
+
+.text-field{
+    -fx-min-width: 380px;
+    -fx-text-fill: #1100cc;
+    -fx-background-color: #ccffcc;
+    -fx-font-style: italic;
+}
+
+.button1{
+    -fx-text-fill: #000000;
+    -fx-background-color: aqua;
+}
+
+#quit{
+    -fx-text-fill: violet;
+    -fx-background-color: #ffffff;
+}
+
+#row3{
+    -fx-spacing: 10px;
+    -fx-border-color: #000000;
+    -fx-border-width: 2px;
+    -fx-padding: 5px;
+    -fx-border-style: segments(10, 15, 15, 15)  line-cap round ;
+}

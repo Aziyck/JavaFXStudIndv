@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="381.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ceiti.me.example.javafxfirstprog.Sarcina2Controller">
+   <children>
+      <TextArea fx:id="textArea" layoutX="8.0" layoutY="13.0" prefHeight="356.0" prefWidth="280.0" />
+      <TableView fx:id="table" layoutX="297.0" layoutY="13.0" onMouseClicked="#onTableColumnClicked" prefHeight="291.0" prefWidth="209.0">
+        <columns>
+          <TableColumn fx:id="column" prefWidth="205.0" text="Words / Expressions" />
+        </columns>
+      </TableView>
+      <Button fx:id="correctTextBtn" layoutX="297.0" layoutY="312.0" mnemonicParsing="false" onAction="#onClickCorrectTextBtn" prefHeight="25.0" prefWidth="209.0" text="Correct text" />
+      <Button fx:id="addRowBtn" layoutX="297.0" layoutY="343.0" mnemonicParsing="false" onAction="#onClickAddRowBtn" prefHeight="25.0" prefWidth="209.0" text="Add row in table" />
+   </children>
+</AnchorPane>

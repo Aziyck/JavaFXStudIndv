@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="230.0" prefWidth="421.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ceiti.me.example.javafxfirstprog.Sarcina1Controller">
+   <children>
+      <TextField layoutX="47.0" layoutY="14.0" prefHeight="25.0" prefWidth="116.0" fx:id="xTF" />
+      <TextField fx:id="aTF" layoutX="47.0" layoutY="56.0" prefHeight="25.0" prefWidth="116.0" />
+      <TextField fx:id="bTF" layoutX="47.0" layoutY="97.0" prefHeight="25.0" prefWidth="116.0" />
+      <Button fx:id="rezolveBtn" layoutX="14.0" layoutY="132.0" mnemonicParsing="false" onAction="#onRezolveBtnClick" prefHeight="52.0" prefWidth="73.0" text="Rezolve" />
+      <Button fx:id="ClearBtn" layoutX="91.0" layoutY="132.0" mnemonicParsing="false" onAction="#onClearBtnClick" prefHeight="52.0" prefWidth="73.0" text="Clear" />
+      <Button fx:id="quitBtn" layoutX="334.0" layoutY="132.0" mnemonicParsing="false" onAction="#onQuitBtnClick" prefHeight="52.0" prefWidth="73.0" text="Quit" />
+      <Label layoutX="22.0" layoutY="60.0" text="a =" />
+      <Label layoutX="22.0" layoutY="101.0" text="b =" />
+      <Label layoutX="22.0" layoutY="18.0" text="x =" />
+      <ImageView fitHeight="106.0" fitWidth="239.0" layoutX="167.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../pics/equation.png" />
+         </image></ImageView>
+      <Label layoutX="167.0" layoutY="132.0" prefHeight="52.0" prefWidth="164.0" style="-fx-border-color: #000000; -fx-padding: 5px;" text="if 'x' &lt;= 7 'a' and 'b' can't be zero simultaneously" textAlignment="CENTER" wrapText="true" />
+      <TextField fx:id="resultTF" disable="true" layoutX="14.0" layoutY="191.0" prefHeight="25.0" prefWidth="392.0" />
+   </children>
+</AnchorPane>
