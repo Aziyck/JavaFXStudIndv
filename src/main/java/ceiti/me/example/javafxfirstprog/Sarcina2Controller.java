@@ -24,7 +24,7 @@ public class Sarcina2Controller extends Application implements Initializable {
     private Stage primaryStage;
     private final String INITIAL_TEXT =
             """
-            Lorem Ipsum is simply dummy text of the\s
+            -Lorem $ is simply dummy text of the\s
             printing and typesetting industry. Lorem\s
             Ipsum has been the industry's standard\s
             dummy text ever since the 1500s, when\s
@@ -36,12 +36,12 @@ public class Sarcina2Controller extends Application implements Initializable {
             popularised in the 1960s with the release\s
             of Letraset sheets containing Lorem Ipsum\s
             passages, and more recently with desktop\s
-            publishing software like Aldus PageMaker\s
+            -publishing $ like Aldus PageMaker\s
             including versions of Lorem Ipsum.\s
             Contrary to popular belief, Lorem Ipsum is\s
-            not simply random text. It has roots in a\s
-            piece of classical Latin literature from\s
-            45 BC, making it over 2000 years old.
+            -not simply $ text. It has roots in a\s
+            -piece of $ Latin literature from\s
+            45 BC, 2000 years old.
             """;
 
     @Override
@@ -68,11 +68,30 @@ public class Sarcina2Controller extends Application implements Initializable {
 
     @FXML
     protected void onClickCorrectTextBtn(){
-//        StringBuilder sb = new StringBuilder();
-//        for (String row : table.getItems()) {
-//            sb.append(row).append(" ");
-//        }
-//        textArea.setText(textArea.getText() + sb);
+        String text = textArea.getText();
+        int i = 0;
+        while (text.contains("$")) {
+            try{
+                text = text.replaceFirst("\\$", table.getItems().get(i));;
+            }catch (Exception ex){
+                text = text.replaceFirst("\\$", "");
+            }
+            i++;
+        }
+        textArea.setText(text);
+
+    }
+
+    public static int countOccurrences(String text, String pattern) {
+        int count = 0;
+        int index = 0;
+
+        while ((index = text.indexOf(pattern, index)) != -1) {
+            count++;
+            index += pattern.length();
+        }
+
+        return count;
     }
 
     @FXML

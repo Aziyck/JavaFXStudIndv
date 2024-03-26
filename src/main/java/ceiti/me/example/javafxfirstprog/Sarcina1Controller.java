@@ -69,7 +69,7 @@ public class Sarcina1Controller extends Application {
     }
 
     private void showAlert(String text){
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setHeaderText("Incorrect input!");
         alert.setContentText(text);
         resultTF.setText("");
